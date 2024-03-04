@@ -1,0 +1,13 @@
+.about h3{
+font-weight: bold !important;
+font-family: Arial, Helvetica, sans-serif !important;
+color: rgb(64, 48, 82) !important;
+    margin-top: 25px;
+
+}
+.about p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 19px;
+    padding: 0px 20px;
+    margin-top: 25px;
+}

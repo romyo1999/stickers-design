@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body{
+  background-color: white!important;
+}
+
+.item-drop{
+  transition: all 0.4s ease-in-out;
+  width: 90% !important;
+}
+
+.item-drop:hover{
+  background-color: aqua !important;
+}
+.navlink{
+  text-decoration: none;
+  font-weight: bold;
+  color: #7d818a !important;
+  transition: all 0.2s ease-in-out;
+}
+.navlink:hover{
+  border-bottom: 2px solid rgb(216, 165, 25);
+}
+.active{
+  color: black !important;
+  border-bottom: 2px solid rgb(216, 165, 25);
+
+}
+.product {
+  width: 100% !important;
+
+  text-align: center;
+  position: relative;
+}
+.zoom-img {
+  transition: transform 0.4s; /* Add a smooth transition effect */
+}
+
+.zoom-img:hover {
+  transform: scale(1.1); /* Increase the scale on hover (zoom in) */
+}
+
+.box-shadow {
+  transition: box-shadow 0.4s ease; /* Add a smooth transition effect */
+  border-radius: 10px;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ffff;
+  background-color: rgb(65, 119, 136);
+  transition: color 0.3s ease;
+  transition: box-shadow 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.wishlist-icon.active {
+  color: red;
+}
+.wishlist-icon:hover{
+  background-color:rgb(35, 78, 78) ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+} */
+
+.popup {
+  position: fixed;
+  width: 400px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transition: opacity 0.9s ease !important; /* Change transition to only affect opacity */
+  opacity: 0; /* Initially set opacity to 0 */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 9999;
+}
+
+.popup.show {
+  opacity: 1; /* Change opacity to 1 when .show class is applied */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-container input {
+  flex: 1;
+}
+
+.filter-container span {
+  margin-left: 10px;
+}
+
+.navFooter{
+  margin-top:auto ;
+  position: static;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-hover{
+
+  border-radius: 100% !important;
+  transition: all 0.4ms ease-in-out;
+}
+
+.btn-hover:hover{
+  opacity: 1.6;
+  box-shadow: 0 0 10px rgb(54, 139, 219);
+}
+
+.btn-shadow{
+  border: 2px solid black !important;
+  border-radius: 20px !important;
+  padding: 8px 20px !important;
+  width: 60% !important;
+
+  margin-top: 10px;
+  font-weight: bold !important;
+  box-shadow: 0 0 10px gray;
+  transition: all 0.4ms ease-in-out;
+}
+.btn-shadow:hover{
+  background-color: #37373a !important;
+  color: #ffff !important;
+}
+
+li{
+  text-align: start;
+}
+.show-line{
+  border-left: 2px solid rgb(96, 96, 97);
+}
+
+
+.footer-admin{
+  background-color: #282c34;
+  padding: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon{
+  transition: all 0.3s ease;
+}
+.icon:hover{
+  color: rgb(0, 217, 255) !important;
+  border-bottom: 2px solid rgb(0, 128, 6);
+}
+
+.spinner{
+  height: 45px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.liked{
+  color: rgb(241, 78, 78) !important;
+  background-color: rgb(108, 184, 184);
+  transition: all 0.3s ease-in-out;
+}
